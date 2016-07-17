@@ -95,7 +95,7 @@
 <meta property="og:image" content="http://o9y0zu7ak.bkt.clouddn.com/blog/deploy.png">
 <meta property="og:image" content="http://o9y0zu7ak.bkt.clouddn.com/blog/%E5%91%BD%E4%BB%A4.png">
 <meta property="og:image" content="http://o9y0zu7ak.bkt.clouddn.com/blog/ssh.png">
-<meta property="og:updated_time" content="2016-07-15T16:11:50.610Z">
+<meta property="og:updated_time" content="2016-07-17T10:36:24.303Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub+Hexo博客搭建">
 <meta name="twitter:description" content="有幸在知乎知道了GitHub，然后逐渐尝试使用GitHub。查资料的时候偶尔看到说可以利用GitHub搭建个人博客，感觉很高大上的东西。昨天搜了一些教程，照着把博客搭出来了，比想象中的简单，但是也遇到了一些问题，在此记录下来。我用的Windows7，其他系统安装的情况可能会有所不同。">
@@ -368,6 +368,7 @@
 <p>然后重新输入<code>hexo s -g</code>即可。</p>
 <ol>
 <li>解决<code>hexo server</code>命令没有作用的办法：<code>install hexo-server --save</code>。</li>
+<li>（2016.07.17更新）尝试用GoogleDrive时出了点问题，导致一直是404，本地的<code>localhost:4000</code>能打开，而且没一点问题，也能提交到github。思来想去只有一个原因，就是该提交的.html文件没有提交上去，据此将hexo安装的步骤重复了一遍，当然提前把theme、source、public几个文件夹以及_config.yml配置文件备份了一份。重装hexo果然好了，再将几个文件夹和文件替换，完美解决！</li>
 </ol>
 
       
