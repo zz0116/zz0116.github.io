@@ -84,16 +84,34 @@
 
 
 
-<meta name="description" content="MySQL中文字段的问题在MySQL的中，往一张表中某个字段插入中文，会出现“SQL执行错误 1366……”。解决办法是，在字段类型后，加上character set utf8。">
+<meta name="description" content="#复习接口    接口中的方法在子类中是不是一定要全部实现？    不是，但必须覆写抽象方法。    为什么接口不允许继承抽象类？
+#复习多线程
+1. 继承Thread类
+2. 实现构造方法，并将需要多线程运行的属性放在其中。
+3. 在主方法启动多线程：*.start
+Runable接口同样可以实现多线程。Thread类是Runable接口的子类。
+重点：Runable能实现线程共享，数据是独立的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Sixpence">
-<meta property="og:url" content="http://yoursite.com/2016/09/24/SQL执行错误1366/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/09/24/6. ThreadDemo/index.html">
 <meta property="og:site_name" content="Sixpence">
-<meta property="og:description" content="MySQL中文字段的问题在MySQL的中，往一张表中某个字段插入中文，会出现“SQL执行错误 1366……”。解决办法是，在字段类型后，加上character set utf8。">
-<meta property="og:updated_time" content="2016-07-18T09:43:52.000Z">
+<meta property="og:description" content="#复习接口    接口中的方法在子类中是不是一定要全部实现？    不是，但必须覆写抽象方法。    为什么接口不允许继承抽象类？
+#复习多线程
+1. 继承Thread类
+2. 实现构造方法，并将需要多线程运行的属性放在其中。
+3. 在主方法启动多线程：*.start
+Runable接口同样可以实现多线程。Thread类是Runable接口的子类。
+重点：Runable能实现线程共享，数据是独立的">
+<meta property="og:updated_time" content="2016-09-24T02:55:15.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Sixpence">
-<meta name="twitter:description" content="MySQL中文字段的问题在MySQL的中，往一张表中某个字段插入中文，会出现“SQL执行错误 1366……”。解决办法是，在字段类型后，加上character set utf8。">
+<meta name="twitter:description" content="#复习接口    接口中的方法在子类中是不是一定要全部实现？    不是，但必须覆写抽象方法。    为什么接口不允许继承抽象类？
+#复习多线程
+1. 继承Thread类
+2. 实现构造方法，并将需要多线程运行的属性放在其中。
+3. 在主方法启动多线程：*.start
+Runable接口同样可以实现多线程。Thread类是Runable接口的子类。
+重点：Runable能实现线程共享，数据是独立的">
 
 
 
@@ -114,7 +132,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/09/24/SQL执行错误1366/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/09/24/6. ThreadDemo/"/>
 
   <title>  | Sixpence </title>
 </head>
@@ -258,7 +276,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-24T21:55:48+08:00" content="2016-09-24">
+            <time itemprop="dateCreated" datetime="2016-09-24T21:57:07+08:00" content="2016-09-24">
               2016-09-24
             </time>
           </span>
@@ -269,8 +287,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/09/24/SQL执行错误1366/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/24/SQL执行错误1366/" itemprop="commentsCount"></span>
+                <a href="/2016/09/24/6. ThreadDemo/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/24/6. ThreadDemo/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -280,7 +298,7 @@
 
           
           
-             <span id="/2016/09/24/SQL执行错误1366/" class="leancloud_visitors" data-flag-title="">
+             <span id="/2016/09/24/6. ThreadDemo/" class="leancloud_visitors" data-flag-title="">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -302,7 +320,18 @@
       
 
       
-        <h1 id="MySQL中文字段的问题"><a href="#MySQL中文字段的问题" class="headerlink" title="MySQL中文字段的问题"></a>MySQL中文字段的问题</h1><p>在MySQL的中，往一张表中某个字段插入中文，会出现“SQL执行错误 1366……”。解决办法是，在字段类型后，加上character set utf8。</p>
+        <p>#复习接口<br>    接口中的方法在子类中是不是一定要全部实现？<br>    不是，但必须覆写抽象方法。<br>    为什么接口不允许继承抽象类？</p>
+<p>#复习多线程</p>
+<pre><code>1. 继承Thread类
+2. 实现构造方法，并将需要多线程运行的属性放在其中。
+3. 在主方法启动多线程：*.start
+Runable接口同样可以实现多线程。Thread类是Runable接口的子类。
+重点：Runable能实现线程共享，数据是独立的！
+</code></pre><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyThread</span> <span class="keyword">extends</span> <span class="title">Thread</span> </span>&#123;</div><div class="line">	<span class="keyword">private</span> String name;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="title">MyThread</span><span class="params">(String name)</span> </span>&#123;</div><div class="line">		<span class="keyword">this</span>.name = name;</div><div class="line">	&#125;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</div><div class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</div><div class="line">			System.out.println(name + <span class="string">"运行，i = "</span> + i);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreadDemo02</span> </span>&#123;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">		MyThread mt1 = <span class="keyword">new</span> MyThread(<span class="string">"线程A"</span>);</div><div class="line">		MyThread mt2 = <span class="keyword">new</span> MyThread(<span class="string">"线程B"</span>);</div><div class="line">		mt1.start();</div><div class="line">		mt2.start();</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyThread</span> <span class="keyword">implements</span> <span class="title">Runnable</span> </span>&#123;</div><div class="line">	<span class="keyword">private</span> <span class="keyword">int</span> ticket = <span class="number">5</span>;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">fun</span><span class="params">()</span> </span>&#123;</div><div class="line">		For (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">100</span>; i++) &#123;</div><div class="line">			<span class="keyword">if</span> (ticket &gt; <span class="number">0</span>) &#123;</div><div class="line">				System.out.println(<span class="string">"卖票：ticket = "</span> + ticket--);</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RunnableDemo02</span> </span>&#123;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">		Mythread my = <span class="keyword">new</span> Mythread();</div><div class="line">		<span class="keyword">new</span> Thread(my).start();<span class="comment">//Runnable没有start方法，还是需要Thread类完成启动。</span></div><div class="line">		<span class="keyword">new</span> Thread(my).start();</div><div class="line">		<span class="keyword">new</span> Thread(my).start();<span class="comment">//可以多次使用start启动线程，启动三个线程。</span></div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>程序运行结果<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">卖票：ticket = 5</div><div class="line">卖票：ticket = 4</div><div class="line">卖票：ticket = 3</div><div class="line">卖票：ticket = 2</div><div class="line">卖票：ticket = 1</div></pre></td></tr></table></figure></li>
+</ul>
 
       
     </div>
@@ -336,10 +365,6 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/09/24/警告 [SetPropertiesRule]{ServerServiceEngineHostContext}/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
-              </a>
-            
           </div>
         </div>
       
@@ -364,8 +389,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/09/24/SQL执行错误1366/"
-           data-title="" data-url="http://yoursite.com/2016/09/24/SQL执行错误1366/">
+      <div class="ds-thread" data-thread-key="2016/09/24/6. ThreadDemo/"
+           data-title="" data-url="http://yoursite.com/2016/09/24/6. ThreadDemo/">
       </div>
     
   </div>
@@ -476,7 +501,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MySQL中文字段的问题"><span class="nav-number">1.</span> <span class="nav-text">MySQL中文字段的问题</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
         </section>
